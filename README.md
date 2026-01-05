@@ -30,15 +30,6 @@ Hay dos opciones para participar en este taller, con las instrucciones que figur
 ### Google Colab
 Para iniciar los cuadernos en Google Colab haz clic en los siguientes enlaces para cada uno de los ejercicios:
 
-<center>
-
-|Actividad 1 | Actividad 2 | Actividad 3 |
-|------------|-------------|-------------|
-|[![Activity 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-1.ipynb?authuser=2)
-|[![Activity 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-2.ipynb?authuser=2)
-|[![Activity 3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-3.ipynb?authuser=2)
-</center>
-
 _**Notas importantes:**_
 * _Para ejecutar en Google Colab necesitas tener una cuenta de Google._
 * _**Si abandonas una sesión en Colab, tu trabajo se perderá, así que asegúrate de guardar cualquier avance que desees conservar.**_
@@ -61,10 +52,10 @@ Instalar conda es fácil y funciona en *Windows, macOS y Linux*. Solo tienes que
 Dirígete al directorio donde deseas instalar este repositorio en tu sistema y clónalo vía https ejecutando:
  
 ```
-git clone https://github.com/dortiz5/ihealth-pinns-summer-school.git
+git clone https://github.com/dortiz5/ihealth-pinns-mini-course.git
 ```
 
-Esto creará un directorio `ihealth-pinns-summer-school/` con el contenido de este repositorio.  
+Esto creará un directorio `ihealth-pinns-mini-course/` con el contenido de este repositorio.  
 
 Ten en cuenta que si tienes una cuenta de GitHub y deseas guardar tu trabajo, te recomendamos [hacer un fork del repositorio](https://github.com/dortiz5/ihealth-pinns-summer-school/fork) y clonar tu fork. Esto te permitirá enviar tus cambios y progresos de vuelta a tu fork para futuras referencias.
 </details>
@@ -73,7 +64,7 @@ Ten en cuenta que si tienes una cuenta de GitHub y deseas guardar tu trabajo, te
 #### 1. Crear el ambiente utilizando `conda`
 **Asegúrate de tener conda instalado**. Este proyecto incluye un archivo [`pinns-tutorial.yml`](pinns-tutorial.yml) para crear e instalar el entorno `python3`.
 
-Desde el directorio raíz `ihealth-pinns-summer-school/`, abre el *Anaconda Prompt* en _Windows_, o en la *terminal* en macOS y Linux, y ejecuta el siguiente código:
+Desde el directorio raíz `ihealth-pinns-mini-course/`, abre el *Anaconda Prompt* en _Windows_, o en la *terminal* en macOS y Linux, y ejecuta el siguiente código:
 
 ```console
 conda env create -f pinns-tutorial.yml
