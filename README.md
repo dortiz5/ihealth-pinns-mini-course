@@ -1,25 +1,23 @@
 # Redes neuronales artificiales informadas por la física​ (PINNs)
 
-Este repositorio contiene material para el **taller** sobre redes neuronales informadas por la física (PINNs) de la escuela de verano del Instituto Milenio [IHEALTH](https://i-health.cl/) (ANID – Programa Iniciativa Científica Milenio – ICN2021_004).  
+Este repositorio contiene material para el **taller** sobre redes neuronales informadas por la física (PINNs) del Instituto Milenio [IHEALTH](https://i-health.cl/) (ANID – Programa Iniciativa Científica Milenio – ICN2021_004).  
 
 ## Motivación
 
-En los últimos años, las redes neuronales profundas se han convertido en herramientas fundamentales para la modelación y el análisis de datos complejos en espacios de alta dimensionalidad. No obstante, estas técnicas suelen requerir grandes volúmenes de datos para ajustar sus numerosos parámetros, lo cual no siempre es viable en situaciones donde la disponibilidad de datos es limitada. Para abordar este desafío, se han desarrollado métodos innovadores como las Redes Neuronales Informadas por Física (PINNs), que combinan el aprendizaje profundo con información física del problema a resolver. Basadas en el teorema de aproximación universal, estas redes son capaces de aproximar funciones no lineales complejas bajo ciertas arquitecturas [(Hornik, 1991)](https://www.sciencedirect.com/science/article/pii/089360809190009T?via%3Dihub), [(Barron, 1993)](https://ieeexplore.ieee.org/document/256500), [(Villota, 2019)](https://investigacion.unirioja.es/documentos/5fbf7e47299952682503c2fa/). Adicionalmente, el uso de diferenciación automática [(Baydin *et al.*, 2018)](https://arxiv.org/abs/1502.05767) permite que las PINNs resuelvan modelos físicos complejos sin la necesidad de grandes cantidades de datos. Esta integración de información adicional facilita la optimización del modelo, permitiendo un mayor nivel de precisión y robustez en aplicaciones donde los datos disponibles son escasos [(Raissi *et al.*, 2019)](https://www.sciencedirect.com/science/article/pii/S0021999118307125), [(Karniadakis *et al.*, 2021)](https://www.nature.com/articles/s42254-021-00314-5).
+En los últimos años, las redes neuronales profundas se han convertido en herramientas fundamentales para la modelación y el análisis de datos complejos en espacios de alta dimensionalidad. No obstante, estas técnicas suelen requerir grandes volúmenes de datos para ajustar sus numerosos parámetros, lo cual no siempre es viable en situaciones donde la disponibilidad de datos es limitada. Para abordar este desafío, se han desarrollado métodos innovadores, como las Redes Neuronales Informadas por Física (PINNs), que combinan el aprendizaje profundo con la información física del problema a resolver. Basadas en el teorema de aproximación universal, estas redes son capaces de aproximar funciones no lineales complejas bajo ciertas arquitecturas [(Hornik, 1991)](https://www.sciencedirect.com/science/article/pii/089360809190009T?via%3Dihub), [(Barron, 1993)](https://ieeexplore.ieee.org/document/256500), [(Villota, 2019)](https://investigacion.unirioja.es/documentos/5fbf7e47299952682503c2fa/). Adicionalmente, el uso de diferenciación automática [(Baydin *et al.*, 2018)](https://arxiv.org/abs/1502.05767) permite que las PINNs resuelvan modelos físicos complejos sin la necesidad de grandes cantidades de datos. Esta integración de información adicional facilita la optimización del modelo, permitiendo un mayor nivel de precisión y robustez en aplicaciones donde los datos disponibles son escasos [(Raissi *et al.*, 2019)](https://www.sciencedirect.com/science/article/pii/S0021999118307125), [(Karniadakis *et al.*, 2021)](https://www.nature.com/articles/s42254-021-00314-5).
 
-## Cronograma (TENTATIVO)
-El taller se llevará a cabo el viernes 10 de enero de 2025, entre las 11:00 y 16:00 hrs (CLT).
+## Contenido del minicurso
 
 <center>
 
-| Hora          | Actividad | 
+| Link          | Actividad | 
 | ------------- | --------- | 
-| 11:00 – 12:30 | Taller teórico: conceptos básicos y aplicaciones| 
-| 12:30 – 13:30 | Almuerzo |
-| 13:30 – 14:30 | Actividad 1: ANN vs. PINNs | 
-| 14:30 – 14:40 | Descanso | 
-| 14:40 – 15:20 | Actividad 2: Aplicaciones en problemas directos |
-| 15:20 – 15:50 | Actividad 3: Aplicaciones en problemas inversos |
-| 15:50 – 16:00 | Clausura |
+|  | Taller teórico: conceptos básicos y aplicaciones| 
+| Lect 1 – Introducción a las PINNs: sistema masa–resorte amortiguado  |  |
+| Lect 2 – ANN vs PINNs: modelo del péndulo no lineal | [![Activity 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-1.ipynb?authuser=2) |
+| Lect 3 – PINNs 2D: difusión directa |  [![Activity 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-2.ipynb?authuser=2) |
+| Lect 4 – PINNs 2D: difusión inversa | [![Activity 3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-3.ipynb?authuser=2) |
+
 </center>
 
 
@@ -36,7 +34,9 @@ Para iniciar los cuadernos en Google Colab haz clic en los siguientes enlaces pa
 
 |Actividad 1 | Actividad 2 | Actividad 3 |
 |------------|-------------|-------------|
-|[![Activity 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-1.ipynb?authuser=2)|[![Activity 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-2.ipynb?authuser=2)|[![Activity 3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-3.ipynb?authuser=2)
+|[![Activity 1](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-1.ipynb?authuser=2)
+|[![Activity 2](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-2.ipynb?authuser=2)
+|[![Activity 3](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/dortiz5/ihealth-pinns-summer-school/blob/main/notebooks/activity-3.ipynb?authuser=2)
 </center>
 
 _**Notas importantes:**_
