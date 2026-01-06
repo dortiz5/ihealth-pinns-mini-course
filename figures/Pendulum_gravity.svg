@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="440px" height="770" viewBox="-105 -10 220 385">
+<title>Simple pendulum</title>
+<desc>
+	A simple pendulum in gravity and the forces acting on it.
+</desc>
+<defs>
+	<marker id="EA_G" viewBox="0 0 10 10" refX="10" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="10,5 0,10 2,5 0,0 10,5" fill="gray" />
+	</marker>
+	<marker id="SA_G" viewBox="0 0 10 10" refX="0" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="0,5 10,0 8,5 10,10 0,5" fill="gray" />
+	</marker>
+	<marker id="EA_G2" viewBox="0 0 10 10" refX="10" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="10,5 0,10 2,5 0,0 10,5" fill="green" />
+	</marker>
+	<marker id="SA_G2" viewBox="0 0 10 10" refX="0" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="0,5 10,0 8,5 10,10 0,5" fill="green" />
+	</marker>
+	<marker id="EA_R" viewBox="0 0 10 10" refX="10" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="10,5 0,10 2,5 0,0 10,5" fill="red" />
+	</marker>
+	<marker id="SA_R" viewBox="0 0 10 10" refX="0" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="0,5 10,0 8,5 10,10 0,5" fill="red" />
+	</marker>
+	<marker id="EA_M" viewBox="0 0 10 10" refX="10" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="10,5 0,10 2,5 0,0 10,5" fill="magenta" />
+	</marker>
+	<marker id="EA_B" viewBox="0 0 10 10" refX="10" refY="5"
+		markerUnits="strokeWidth" orient="auto"
+		markerWidth="8" markerHeight="8">
+		<polyline points="10,5 0,10 2,5 0,0 10,5" fill="blue" />
+	</marker>
+	<radialGradient id = "light" cx = "50%" cy = "50%" fx = "40%" fy = "35%" r = "65%">
+		<stop stop-color = "rgb(255,255,255)" offset = "0%"/>
+		<stop stop-color = "rgb(190,190,190)" offset = "40%"/>
+		<stop stop-color = "rgb(80,80,80)" offset = "100%"/>
+	</radialGradient>
+</defs>
+<g style="fill:none;stroke:grey">
+	<path d="M-102.5,182.5 A202,202 0 0,0 102.5,182.5"
+		style="stroke-dasharray:4,3;stroke:green" marker-end="url(#EA_G2)" marker-start="url(#SA_G2)"/>
+	<path id="arc" d="M0,40 A40,40 0 0,0 10.35,38.6" stroke="black"/>
+	<use xlink:href="#arc" x="54.4" y="202.8" />
+	<path d="M0,-10 v80 M-30,0 h40" stroke-dasharray="3,3"/>
+</g>
+<g transform="rotate(-15,0,0)" >
+	<path d="M-150,210 h210" stroke="red" marker-end="url(#EA_R)" marker-start="url(#SA_R)"
+		stroke-dasharray="3,3"/>
+	<path d="M0,210 l-40.2,150" stroke="blue" marker-end="url(#EA_B)" />
+	<g stroke="magenta" marker-end="url(#EA_M)">
+	<path d="M0,210 V360" /> <path d="M0,210 h-40.2" />
+	</g>
+	<line x1="0" x2="0" y1="0" y2="195" style="stroke:black;stroke-width:1" />
+	<circle cx="0" cy="210" r="15" fill="url(#light)" opacity=".93" />
+	<path d="M0,360 h-40.2 v-180" stroke="gray" stroke-dasharray="3,3" fill="none" />
+	<path d="M20,0 V210" stroke="gray" marker-end="url(#EA_G)" marker-start="url(#SA_G)"/>
+</g>
+<g stroke="none" fill="black" font-size="13" font-style="italic">
+<text><tspan x="3" y="55">&#x03b8;</tspan><tspan x="57" y="255">&#x03b8;</tspan>
+<tspan x="50" y="368">mg</tspan></text>
+<text transform="rotate(75)" x="105" y="-15" >l</text>
+<text transform="rotate(-15,0,210)" x="-80" y="214">mg <tspan font-style="normal">sin</tspan>&#x03b8;</text>
+<text transform="rotate(75,54.4,202.8)" x="115" y="199">mg <tspan font-style="normal">cos</tspan>&#x03b8;</text>
+</g>
+</svg>
